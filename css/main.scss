@@ -10,3 +10,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    height: 2rem;
+    margin-top: auto;
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+        margin-top: 80px;
+    }
+}
