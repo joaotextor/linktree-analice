@@ -62,16 +62,23 @@
 
 }
 
-@media (max-width: 1500px) and (min-width: 701px) {
+@media (max-width: 1500px) and (min-width: 983px) {
     .linkList {
-        font-size: 5rem;
-        padding: 2rem 2rem;
+        font-size: 4rem;
+        padding: 2rem 25rem;
+    }
+}
+
+@media (max-width: 982px) and (min-width: 701px) {
+    .linkList {
+        font-size: 4rem;
+        padding: 2rem 15rem;
     }
 }
 
 @media (max-width: 700px) {
    .linkList {
         font-size: 2.5rem;
-        padding: 2rem 2rem;
+        padding: 2rem 5rem;
    }
 }
