@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+:root {
+  font-size: 10px;
+  --color-primary: rgba(0,255,220,1);
+  --color-secondary: rgb(197, 87, 228);
+  --font-primary: "Fuzzy Bubbles", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/background.png");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: var(--font-primary);
+}
+body .profile {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+body .profile .avatar {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0px 0px 15px 0px rgb(194, 255, 247);
+}
+@media (max-width: 700px) {
+  body .profile .avatar {
+    height: 16rem;
+    width: 16rem;
+  }
+}
+body .profile #titulo {
+  margin: 0 auto;
+  font-size: 5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 220, 0.3);
+  color: var(--color-primary);
+  -webkit-animation: titleAnimation 5s ease infinite;
+          animation: titleAnimation 5s ease infinite;
+  background: linear-gradient(0deg, rgb(197, 87, 228) 0%, rgb(47, 49, 182) 47%, rgb(0, 255, 220) 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@-webkit-keyframes titleAnimation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@keyframes titleAnimation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@media (max-width: 700px) {
+  body .profile #titulo {
+    font-size: 3rem;
+  }
+}
+body .profile #description {
+  display: block;
+  font-size: 3rem;
+  background: linear-gradient(0deg, rgb(197, 87, 228) 0%, rgb(47, 49, 182) 47%, rgb(0, 255, 220) 100%);
+  background-size: 200% 170%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 700px) {
+  body .profile #description {
+    font-size: 2rem;
+  }
+}
+body .nav {
+  margin: 2rem auto;
+  min-width: 35rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+body .nav img {
+  width: 7rem;
+}
+@media (max-width: 700px) {
+  body .nav img {
+    width: 4.5rem;
+  }
+}
+body .listContent {
+  list-style: none;
+  font-size: 5rem;
+}
+body .listContent li {
+  margin: 2rem 15rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--color-secondary);
+}
+body .listContent li a {
+  align-items: center;
+  text-decoration: none;
+}
+body .listContent li .linkImage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .listContent li .linkImage img {
+  width: 10%;
+}
+body .listContent li .linkImage div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+body .listContent li .linkImage div span {
+  display: inline-block;
+  color: rgb(194, 255, 247);
+}
+@media (max-width: 700px) {
+  body .listContent li {
+    margin: 2rem 2rem;
+  }
+}
+@media (max-width: 700px) {
+  body .listContent {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 700px) {
+  body body {
+    background-size: 180vh;
+  }
+}/*# sourceMappingURL=main.css.map */

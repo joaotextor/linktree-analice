@@ -1,0 +1,77 @@
+//*================|
+//*================|
+//*=== LINK LIST ==|
+//*================|
+//*================|
+
+//* UL
+
+.linkList {
+
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px black;
+    padding: 2rem 50rem;
+
+    a {
+        text-decoration: none;
+        margin: 1rem 0;
+    
+
+        li {
+            display: flex;
+            padding: 1rem;
+            border: 0;
+            border-radius: 10px;
+            background-color: var(--color-secondary);
+            margin: 1rem 0;
+            
+            .linkImage {  //* DIV
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    border: 0;
+                    border-radius: 10px;
+                    width: 8rem;
+                }
+
+                @media (max-width: 700px) {
+                    img {
+                        width: 5rem;
+                    }
+                }
+
+            }
+
+            .linkText {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                
+                span {
+                    display: inline-block;
+                    color: var(--font-color-primary);
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1500px) and (min-width: 701px) {
+    .linkList {
+        font-size: 5rem;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+   .linkList {
+        font-size: 2.5rem;
+        padding: 2rem 2rem;
+   }
+}

@@ -1,0 +1,76 @@
+//*================|
+//*================|
+//*==== PROFILE====|
+//*================|
+//*================|
+    
+.profile {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    
+    .avatar {
+        display: block;
+        height: 25rem;
+        width: 25rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+        border: 1px solid white;
+        box-shadow: 0px 0px 15px 0px rgb(194, 255, 247);            
+    }
+
+    @media (max-width: 700px) {
+        .avatar {
+            height: 16rem;
+            width: 16rem;
+        }
+    
+    }
+
+    #titulo {
+        margin: 0 auto;
+        font-size: 5rem;
+        text-shadow: 0 0 10px rgba(0,255,220,0.3);
+        color: var(--color-primary);
+        animation: titleAnimation 5s ease infinite;
+        background: linear-gradient(0deg, rgb(197, 87, 228) 0%, rgb(47, 49, 182) 47%, rgba(0,255,220,1) 100%);  
+        background-size: 400% 400%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    @keyframes titleAnimation {
+        0% {
+            background-position: 0% 100%;
+        }
+        50% {
+            background-position: 100% 0%;
+        }
+        100% {
+            background-position: 0% 100%;
+        }
+    }
+    
+
+    @media (max-width: 700px) {
+
+        #titulo {
+            font-size: 3rem;
+        }
+    }
+
+    #description {
+        display: block;
+        font-size: 3rem;
+        background: linear-gradient(0deg, rgb(197, 87, 228) 0%, rgb(47, 49, 182) 47%, rgba(0,255,220,1) 100%);  
+        background-size: 200% 170%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    @media (max-width: 700px) {
+        #description { 
+            font-size: 2rem; 
+        }
+    }
+}

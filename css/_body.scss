@@ -1,0 +1,21 @@
+//*================|
+//*================|
+//*==== BODY ======|
+//*================|
+//*================|
+
+body {
+    background: url("../images/background.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+@media (max-width: 700px) {
+    body {
+        background-size: 180vh;
+    }
+}
