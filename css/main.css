@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
 :root {
   font-size: 10px;
-  --color-primary: rgba(0,255,220,1);
-  --color-secondary: rgb(248, 157, 213);
+  --color-primary: rgba(0, 255, 220, 1);
+  --color-secondary: rgb(132, 30, 93);
   --font-primary: "Fuzzy Bubbles", cursive;
   --font-color-primary: rgb(194, 255, 247);
 }
@@ -32,24 +32,12 @@
   font-size: 5rem;
   text-shadow: 0 0 10px rgba(0, 255, 220, 0.3);
   color: var(--color-primary);
-  -webkit-animation: titleAnimation 5s ease infinite;
-          animation: titleAnimation 5s ease infinite;
+  animation: titleAnimation 5s ease infinite;
   background: linear-gradient(0deg, rgb(197, 87, 228) 0%, rgb(47, 49, 182) 47%, rgb(0, 255, 220) 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@-webkit-keyframes titleAnimation {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
 }
 @keyframes titleAnimation {
   0% {
@@ -190,6 +178,15 @@ footer {
   background-color: var(--color-secondary);
   height: 2rem;
   margin-top: auto;
+  color: #fff;
+}
+footer :-moz-any-link {
+  color: #fff;
+  text-decoration: none;
+}
+footer :any-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 700px) {
